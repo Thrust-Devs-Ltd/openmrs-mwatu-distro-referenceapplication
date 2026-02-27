@@ -14,8 +14,8 @@
   </organization>
 
   <scm>
-    <connection>scm:git:git@github.com:openmrs/openmrs-distro-referenceapplication.git</connection>
-    <developerConnection>scm:git:git@github.com:openmrs/openmrs-distro-referenceapplication.git</developerConnection>
+    <connection>scm:git@github.com/Thrust-Devs-Ltd/openmrs-mwatu-distro-referenceapplication.git</connection>
+    <developerConnection>scm:git@github.com/Thrust-Devs-Ltd/openmrs-mwatu-distro-referenceapplication.git</developerConnection>
     <tag>HEAD</tag>
   </scm>
 
@@ -169,6 +169,14 @@
         <updatePolicy>interval:10080</updatePolicy>
       </snapshots>
     </repository>
+    <repository>
+      <id>github</id>
+      <name>GitHub Thrust-Devs-Ltd Packages</name>
+      <url>https://maven.pkg.github.com/Thrust-Devs-Ltd/openmrs-mwatu-content-referenceapplication-demo</url>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
   </repositories>
 
   <pluginRepositories>
@@ -203,14 +211,14 @@
 
   <distributionManagement>
     <repository>
-      <id>openmrs-repo-releases</id>
-      <name>OpenMRS Releases Repo</name>
-      <url>https://mavenrepo.openmrs.org/releases</url>
+      <id>github</id>
+      <name>GitHub Thrust-Devs-Ltd Packages</name>
+      <url>https://maven.pkg.github.com/Thrust-Devs-Ltd/openmrs-mwatu-distro-referenceapplication</url>
     </repository>
     <snapshotRepository>
-      <id>openmrs-repo-snapshots</id>
-      <name>OpenMRS Snapshots Repo</name>
-      <url>https://mavenrepo.openmrs.org/snapshots</url>
+      <id>github</id>
+      <name>GitHub Thrust-Devs-Ltd Packages</name>
+      <url>https://maven.pkg.github.com/Thrust-Devs-Ltd/openmrs-mwatu-distro-referenceapplication</url>
     </snapshotRepository>
   </distributionManagement>
 

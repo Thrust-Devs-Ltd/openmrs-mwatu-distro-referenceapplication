@@ -10,3 +10,5 @@ CLAUDE.md
 .cursor/
 .aider*
 .clinerules
+settings-docker.xml
+.env

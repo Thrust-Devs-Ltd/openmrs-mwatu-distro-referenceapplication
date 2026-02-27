@@ -8,7 +8,7 @@ https://dev3.openmrs.org and https://o3.openmrs.org.
 ### Run the app (using pre-built images)
 
 ```bash
-docker compose up
+DOCKER_BUILDKIT=1 docker compose -f docker-compose.yml up -d --build
 ```
 
 The OpenMRS 3.x UI is accessible at http://localhost/openmrs/spa
