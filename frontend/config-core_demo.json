@@ -2,18 +2,70 @@
   "@openmrs/esm-patient-chart-app": {
     "restrictByVisitLocationTag": true,
     "showUpcomingAppointments": true,
+    "visitAttributeTypes": [],
     "extensionSlots": {
       "action-menu-patient-chart-items-slot": {
-        "order": ["order-basket-action-menu"]
+        "order": [
+          "order-basket-action-menu"
+        ]
+      },
+      "patient-chart-dashboard-slot": {
+        "remove": [
+          "programs-summary-dashboard",
+          "results-summary-dashboard",
+          "test-results-summary-dashboard",
+          "immunization-summary-dashboard"
+        ]
+      },
+      "extra-visit-attribute-slot": {
+        "remove": [
+          "billing-checkin-form"
+        ]
+      },
+      "patient-chart-summary-dashboard-slot": {
+        "add": [
+          "past-visits-detail-overview"
+        ],
+        "remove": [
+          "active-medications-widget",
+          "biometrics-overview-widget",
+          "conditions-overview-widget",
+          "past-medications-widget",
+          "vitals-overview-widget"
+        ]
+      },
+      "patient-info-slot": {
+        "remove": [
+          "patient-vitals-info"
+        ]
       }
     }
   },
-  "@openmrs/esm-ward-app": {
+  "@openmrs/esm-home-app": {
     "extensionSlots": {
-      "action-menu-ward-patient-items-slot": {
-        "add": ["order-basket-action-menu"]
+      "homepage-dashboard-slot": {
+        "remove": [
+          "laboratory-dashboard-link",
+          "patient-lists-dashboard-link",
+          "ward-dashboard-link"
+        ]
       }
     }
+  },
+  "@openmrs/esm-patient-banner-app": {
+    "extensionSlots": {
+      "patient-actions-slot": {
+        "remove": [
+          "add-patient-to-patient-list-button",
+          "mark-alive-button",
+          "mark-patient-deceased-button"
+        ]
+      }
+    }
+  },
+  "@openmrs/esm-billing-app": {
+    "country": "Uganda",
+    "defaultCurrency": "UGX"
   },
   "@openmrs/esm-service-queues-app": {
     "statusConfigs": [
@@ -40,6 +92,17 @@
     "defaultFacilityUrl": ""
   },
   "@openmrs/esm-styleguide": {
-    "Brand color #1": "#005d5d"
+    "Brand color #1": "#085485",
+    "Brand color #2": "#085485",
+    "Brand color #3": "#085485"
+  },
+  "@openmrs/esm-patient-orders-app": {
+    "extensionSlots": {
+      "order-basket-slot": {
+        "remove": [
+          "lab-order-panel"
+        ]
+      }
+    }
   }
 }

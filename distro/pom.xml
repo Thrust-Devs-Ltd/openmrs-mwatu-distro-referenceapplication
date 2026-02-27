@@ -57,7 +57,7 @@
     <billing.version>2.0.0</billing.version>
     <!-- Content Packages -->
     <reference-content.version>1.4.0</reference-content.version>
-    <reference-demo-content.version>1.7.0</reference-demo-content.version>
+    <mwatureferenceapplication.version>1.8.0-SNAPSHOT</mwatureferenceapplication.version>
   </properties>
 
   <dependencies>
@@ -237,6 +237,12 @@
       <artifactId>billing-omod</artifactId>
       <version>${billing.version}</version>
       <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.openmrs.content</groupId>
+      <artifactId>mwatu-referenceapplication-demo</artifactId>
+      <version>${mwatureferenceapplication.version}</version>
+      <type>zip</type>
     </dependency>
   </dependencies>
 
